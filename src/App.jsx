@@ -1,12 +1,19 @@
-import './App.css'
-import CanvasModel from './canvas'
+import './App.css';
+import Main from './pages/Main';
+import Nav from './components/Nav';
+import Jumbotron from './components/Jumbotron';
+import SoundSection from './components/SoundSection';
+import DisplaySection from './components/DisplaySection';
 
 function App() {
 
   return (
-    <>
-      <CanvasModel/>
-    </>
+    <div className='App'>
+      <Nav/>
+      <Jumbotron/>
+      <SoundSection/>
+      <DisplaySection/>
+    </div>
   )
 }
 
