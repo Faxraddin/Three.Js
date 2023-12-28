@@ -3,11 +3,12 @@ import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
 
 import { Island } from "../models/Island";
+import Sky from "../models/Sky";
 
 const Home = () => {
     const adjustIslandForScreenSize = () => {
       let screenScale = null;
-      let screenPosotion = [,0, -6.5, -43];
+      let screenPosition = [0, -6.5, -43];
       let rotation = [0.1 ,4.7 ,0];
 
       if(window.innerWidth < 768) {
@@ -16,7 +17,7 @@ const Home = () => {
         screenScale = [1,1,1]
       }
 
-      return [screenScale,screenPosotion,rotation]
+      return [screenScale,screenPosition,rotation]
     };
 
     const [ islandScale,islandPosition,islandRotation ] = adjustIslandForScreenSize(); 
@@ -29,16 +30,14 @@ const Home = () => {
           >
             <Suspense fallback={<Loader/>}>
 
-              <directionalLight/>
-              <ambientLight/>
-              <pointLight/>
-              <spotLight/>
-              <hemisphereLight/>
-
+              <directionalLight position={[1,1,1]} intensity={2}/>
+              <ambientLight intensity={0.5}/>
+              
+              <Sky/>
               <Island
                 position={islandPosition}
                 scale={islandScale}
-                
+                rotation = {islandRotation}
               />
 
             </Suspense>
