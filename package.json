@@ -22,6 +22,7 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.21.1",
     "react-router-dom": "^6.21.1",
+    "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.160.0",
     "valtio": "^1.12.1",
     "webgi": "https://storage.googleapis.com/dist.pixotronics.com/webgi/runtime/bundle-0.5.8.tgz"
