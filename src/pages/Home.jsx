@@ -9,6 +9,7 @@ import Plane from "../models/Plane";
 
 import HomeInfo from "../components/HomeInfo";
 
+
 const Home = () => {
     const [isRotating,setIsRotating] = useState(false);
     const [currentStage,setCurrentStage] = useState(1);
