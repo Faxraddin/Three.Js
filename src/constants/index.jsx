@@ -205,6 +205,13 @@ export const projects = [
         link: 'https://netflix-navy-theta.vercel.app/register',
     },
     {
+        iconUrl: car,
+        theme: 'btn-back-blue',
+        name: 'Hotel/Restaurant website ',
+        description: 'Website for a local hotel/restaurant,where user can learn about hotel,where it’s located and what you can do there,if you like it,you can make a booking!',
+        link: 'https://hopelake.netlify.app',
+    },
+    {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
         name: 'E-commerce On MERN',
