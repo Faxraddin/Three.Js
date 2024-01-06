@@ -191,18 +191,18 @@ export const projects = [
         link: 'https://anitaimpex.com',
     },
     {
+        iconUrl: estate,
+        theme: 'btn-back-blue',
+        name: '3D room website ',
+        description: '3D room website with cool scroll effect!',
+        link: 'https://3-d-room-xi.vercel.app',
+    },
+    {
         iconUrl: threads,
         theme: 'btn-back-green',
         name: 'Full Stack Netflix Clone',
         description: 'Created a full-stack replica of the popular discussion platform "Netflix,"',
         link: 'https://netflix-navy-theta.vercel.app/register',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Hotel/Restaurant website ',
-        description: 'Website for a local hotel/restaurant,where user can learn about hotel,where it’s located and what you can do there,if you like it,you can make a booking!',
-        link: 'https://hopelake.netlify.app',
     },
     {
         iconUrl: snapgram,
